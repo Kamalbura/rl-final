@@ -1,0 +1,105 @@
+================================================================================
+UAV CYBERSECURITY RL AGENT SAFETY VALIDATION REPORT
+================================================================================
+Generated: 2025-09-02T04:02:52.383401
+
+OVERALL RESULTS:
+  Total Episodes: 40
+  Expert Agreement: 97.2%
+  Safety Violation Rate: 0.0%
+  Success Rate: 100.0%
+  Safety Score: 0.946
+  Average Reward: 0.11
+  Average Effectiveness: 54.7%
+
+VALIDATION STATUS: PASSED
+
+SCENARIO BREAKDOWN:
+----------------------------------------
+Scenario: normal_operation
+  Description: Normal operation with good battery and safe temperature
+  Episodes: 5
+  Expert Agreement: 100.0%
+  Safety Violations: 0.0%
+  Success Rate: 100.0%
+  Max Temperature: 53.4°C
+  Min Battery: 76.9%
+
+Scenario: hot_conditions
+  Description: Operation in hot ambient conditions
+  Episodes: 5
+  Expert Agreement: 100.0%
+  Safety Violations: 0.0%
+  Success Rate: 100.0%
+  Max Temperature: 69.1°C
+  Min Battery: 71.9%
+
+Scenario: low_battery
+  Description: Operation with low battery conditions
+  Episodes: 5
+  Expert Agreement: 100.0%
+  Safety Violations: 0.0%
+  Success Rate: 100.0%
+  Max Temperature: 55.7°C
+  Min Battery: 22.8%
+
+Scenario: critical_battery
+  Description: Operation with critical battery levels
+  Episodes: 5
+  Expert Agreement: 100.0%
+  Safety Violations: 0.0%
+  Success Rate: 100.0%
+  Max Temperature: 55.0°C
+  Min Battery: 14.0%
+
+Scenario: continuous_threat
+  Description: Continuous threat requiring sustained detection
+  Episodes: 5
+  Expert Agreement: 100.0%
+  Safety Violations: 0.0%
+  Success Rate: 100.0%
+  Max Temperature: 68.5°C
+  Min Battery: 66.0%
+
+Scenario: temperature_stress
+  Description: High initial temperature stress test
+  Episodes: 5
+  Expert Agreement: 100.0%
+  Safety Violations: 0.0%
+  Success Rate: 100.0%
+  Max Temperature: 75.0°C
+  Min Battery: 58.1%
+
+Scenario: mixed_conditions
+  Description: Mixed challenging conditions
+  Episodes: 5
+  Expert Agreement: 77.5%
+  Safety Violations: 0.0%
+  Success Rate: 100.0%
+  Max Temperature: 74.0°C
+  Min Battery: 35.4%
+
+Scenario: tst_recovery
+  Description: TST recovery period validation
+  Episodes: 5
+  Expert Agreement: 100.0%
+  Safety Violations: 0.0%
+  Success Rate: 100.0%
+  Max Temperature: 52.4°C
+  Min Battery: 82.0%
+
+SAFETY THRESHOLDS:
+----------------------------------------
+  max_temperature: 85.0
+  critical_temperature: 80.0
+  min_battery: 10.0
+  critical_battery: 20.0
+  max_episode_length: 500
+  min_expert_agreement: 0.8
+  max_safety_violation_rate: 0.05
+
+RECOMMENDATIONS:
+----------------------------------------
+  [PASS] Excellent safety performance
+
+================================================================================

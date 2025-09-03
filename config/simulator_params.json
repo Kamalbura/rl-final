@@ -1,0 +1,37 @@
+{
+  "thermal_model": {
+    "ambient_temperature": 25.0,
+    "thermal_mass": 50.0,
+    "cooling_coefficient": 0.02,
+    "algorithm_heat_generation": {
+      "No_DDoS": 0.5,
+      "XGBoost": 2.0,
+      "TST": 4.0
+    },
+    "temperature_thresholds": {
+      "safe_max": 65.0,
+      "warning_max": 75.0,
+      "critical_max": 85.0
+    }
+  },
+  "power_model": {
+    "base_power": 3.0,
+    "algorithm_power": {
+      "No_DDoS": 1.0,
+      "XGBoost": 3.5,
+      "TST": 6.0
+    },
+    "battery_capacity": 100.0,
+    "discharge_rate": 0.1
+  },
+  "timing": {
+    "simulation_timestep": 1.0,
+    "tst_duration": 30.0,
+    "tst_cooldown": 240.0
+  },
+  "safety_constraints": {
+    "max_temperature": 85.0,
+    "min_battery": 5.0,
+    "emergency_shutdown_temp": 90.0
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "training_summary": {
+    "total_episodes": 5,
+    "training_time_seconds": 2.3322651386260986,
+    "training_time_minutes": 0.03887108564376831,
+    "episodes_per_minute": 128.63031523796877
+  },
+  "performance": {
+    "final_avg_reward": 18.723003409612154,
+    "final_expert_agreement": 0.8300000000000001,
+    "final_effectiveness": 0.6045,
+    "reward_improvement": 0
+  },
+  "safety": {
+    "total_safety_violations": 0,
+    "total_temperature_violations": 0,
+    "total_battery_violations": 0,
+    "safety_violation_rate": 0.0,
+    "max_temperature_observed": 65.20637923228308,
+    "min_battery_observed": 60.43385063961945
+  },
+  "agent_stats": {
+    "total_states": 5400,
+    "visited_states": 27,
+    "coverage": 0.005,
+    "expert_agreement": 1.0,
+    "current_epsilon": 0.29257462593656247,
+    "action_distribution": {
+      "0": 3,
+      "1": 22,
+      "2": 2
+    },
+    "exploration_ratio": 0.12440191387559808,
+    "total_updates": 100,
+    "q_table_size": 5400,
+    "average_visits_per_state": 3.7037037037037037
+  },
+  "action_distribution": {
+    "0": 25,
+    "1": 71,
+    "2": 4
+  },
+  "config": {
+    "num_episodes": 5,
+    "max_steps_per_episode": 20,
+    "eval_interval": 10,
+    "save_interval": 10,
+    "log_interval": 2,
+    "output_dir": "results/20250902_040554\\validation_test",
+    "experiment_name": "validation_test"
+  },
+  "output_directory": "results/20250902_040554\\validation_test"
+}

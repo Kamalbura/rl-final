@@ -1,0 +1,9 @@
+{
+  "num_episodes": 5,
+  "max_steps_per_episode": 20,
+  "eval_interval": 10,
+  "save_interval": 10,
+  "log_interval": 2,
+  "output_dir": "results/20250902_040554\\validation_test",
+  "experiment_name": "validation_test"
+}

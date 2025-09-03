@@ -1,0 +1,24 @@
+{
+  "agent": {
+    "learning_rate": 0.1,
+    "discount_factor": 0.99,
+    "epsilon_start": 0.3,
+    "epsilon_end": 0.05,
+    "epsilon_decay": 0.995,
+    "expert_bonus_weight": 2.0,
+    "safety_barrier_value": -100.0
+  },
+  "training": {
+    "num_episodes": 1000,
+    "max_steps_per_episode": 300,
+    "eval_interval": 100,
+    "save_interval": 200,
+    "log_interval": 50
+  },
+  "reward_weights": {
+    "power_efficiency": 0.3,
+    "thermal_safety": 0.25,
+    "algorithm_effectiveness": 0.25,
+    "expert_agreement": 0.2
+  }
+}

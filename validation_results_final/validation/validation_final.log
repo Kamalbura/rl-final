@@ -1,0 +1,56 @@
+2025-09-02 05:27:32,606 - ERROR - Error loading config: stat: path should be string, bytes, os.PathLike or integer, not dict
+2025-09-02 05:27:32,607 - INFO - UAV simulator initialized
+2025-09-02 05:27:32,607 - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 05:27:32,607 - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 05:27:32,607 - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 05:27:32,607 - INFO - Safety validator initialized with 8 scenarios
+2025-09-02 05:27:32,607 - INFO - Warming up Q-table from expert policy
+2025-09-02 05:27:32,639 - INFO - Q-table initialized with 5400 states
+2025-09-02 05:27:32,642 - INFO - Q-learning agent initialized with 5400 states
+2025-09-02 05:27:32,747 - INFO - Agent loaded from production_model/checkpoints/final_model.json
+2025-09-02 05:27:32,748 - INFO - Loaded 5400 states, 101700 updates
+2025-09-02 05:27:32,748 - INFO - Components initialized
+2025-09-02 05:27:32,748 - INFO - Starting FINAL validation suite...
+2025-09-02 05:27:32,750 - INFO - State combinations progress: 20.0%
+2025-09-02 05:27:32,750 - INFO - State combinations progress: 40.0%
+2025-09-02 05:27:32,750 - INFO - State combinations progress: 60.0%
+2025-09-02 05:27:32,750 - INFO - State combinations progress: 80.0%
+2025-09-02 05:27:32,754 - INFO - State combinations progress: 100.0%
+2025-09-02 05:27:32,754 - INFO - Running scenario: normal_operation
+2025-09-02 05:27:32,777 - INFO - Running scenario: hot_conditions
+2025-09-02 05:27:32,798 - INFO - Running scenario: low_battery
+2025-09-02 05:27:32,819 - INFO - Running scenario: critical_battery
+2025-09-02 05:27:32,837 - INFO - Running scenario: continuous_threat
+2025-09-02 05:27:32,864 - INFO - Running scenario: temperature_stress
+2025-09-02 05:27:32,885 - INFO - Running scenario: mixed_conditions
+2025-09-02 05:27:32,909 - INFO - Running scenario: tst_recovery
+2025-09-02 05:27:33,307 - INFO - All results saved (CSV, state combos, scenarios, metrics).
+2025-09-02 05:27:35,351 - INFO - FINAL validation complete.
+2025-09-02 05:28:28,608 - ERROR - Error loading config: stat: path should be string, bytes, os.PathLike or integer, not dict
+2025-09-02 05:28:28,608 - INFO - UAV simulator initialized
+2025-09-02 05:28:28,608 - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 05:28:28,608 - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 05:28:28,608 - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 05:28:28,608 - INFO - Safety validator initialized with 8 scenarios
+2025-09-02 05:28:28,608 - INFO - Warming up Q-table from expert policy
+2025-09-02 05:28:28,642 - INFO - Q-table initialized with 5400 states
+2025-09-02 05:28:28,642 - INFO - Q-learning agent initialized with 5400 states
+2025-09-02 05:28:28,750 - INFO - Agent loaded from production_model/checkpoints/final_model.json
+2025-09-02 05:28:28,752 - INFO - Loaded 5400 states, 101700 updates
+2025-09-02 05:28:28,752 - INFO - Components initialized
+2025-09-02 05:28:28,752 - INFO - Starting FINAL validation suite...
+2025-09-02 05:28:28,752 - INFO - State combinations progress: 20.0%
+2025-09-02 05:28:28,752 - INFO - State combinations progress: 40.0%
+2025-09-02 05:28:28,755 - INFO - State combinations progress: 60.0%
+2025-09-02 05:28:28,755 - INFO - State combinations progress: 80.0%
+2025-09-02 05:28:28,755 - INFO - State combinations progress: 100.0%
+2025-09-02 05:28:28,756 - INFO - Running scenario: normal_operation
+2025-09-02 05:28:28,773 - INFO - Running scenario: hot_conditions
+2025-09-02 05:28:28,798 - INFO - Running scenario: low_battery
+2025-09-02 05:28:28,819 - INFO - Running scenario: critical_battery
+2025-09-02 05:28:28,840 - INFO - Running scenario: continuous_threat
+2025-09-02 05:28:28,860 - INFO - Running scenario: temperature_stress
+2025-09-02 05:28:28,883 - INFO - Running scenario: mixed_conditions
+2025-09-02 05:28:28,906 - INFO - Running scenario: tst_recovery
+2025-09-02 05:28:29,295 - INFO - All results saved (CSV, state combos, scenarios, metrics).
+2025-09-02 05:28:31,124 - INFO - FINAL validation complete.

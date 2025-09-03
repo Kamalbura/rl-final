@@ -1,0 +1,22 @@
+2025-09-02 04:05:54,269 - __main__ - INFO - Starting UAV RL System in validate_system mode
+2025-09-02 04:05:54,269 - __main__ - INFO - Arguments: {'mode': 'validate_system', 'episodes': 1000, 'max_steps': 300, 'eval_interval': 100, 'save_interval': 200, 'log_interval': 50, 'learning_rate': 0.1, 'discount': 0.99, 'epsilon_start': 0.3, 'epsilon_end': 0.05, 'epsilon_decay': 0.995, 'expert_bonus': 2.0, 'sim_config': 'config/simulator_params.json', 'expert_config': 'config/expert_policy.json', 'output_dir': 'results/20250902_040554', 'experiment_name': 'uav_ddos_rl', 'model_path': None, 'log_level': 'INFO', 'no_validation': False}
+2025-09-02 04:05:54,274 - __main__ - INFO - Loading simulator config from config/simulator_params.json
+2025-09-02 04:05:54,277 - environment.thermal_simulator - INFO - UAV simulator initialized
+2025-09-02 04:05:54,286 - agents.expert_policy - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 04:05:54,286 - agents.expert_policy - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 04:05:54,287 - utils.state_discretizer - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 04:05:54,287 - agents.q_learning_agent - INFO - Warming up Q-table from expert policy
+2025-09-02 04:05:54,333 - agents.q_learning_agent - INFO - Q-table initialized with 5400 states
+2025-09-02 04:05:54,336 - agents.q_learning_agent - INFO - Q-learning agent initialized with 5400 states
+2025-09-02 04:05:54,336 - validation.safety_validator - INFO - Safety validator initialized with 8 scenarios
+2025-09-02 04:05:54,336 - __main__ - INFO - All components created successfully
+2025-09-02 04:05:54,338 - training.trainer - INFO - RL Trainer initialized with config: validation_test
+2025-09-02 04:05:54,340 - training.trainer - INFO - Starting training for 5 episodes
+2025-09-02 04:05:54,344 - training.trainer - INFO - Episode 2/5: Reward=19.06, Length=20.0, Expert=80.0%, MaxTemp=63.2°C, Effectiveness=64.2%, Safety=0.0, Epsilon=0.297
+2025-09-02 04:05:54,354 - training.trainer - INFO - Episode 4/5: Reward=18.08, Length=20.0, Expert=82.5%, MaxTemp=48.6°C, Effectiveness=52.6%, Safety=0.0, Epsilon=0.294
+2025-09-02 04:05:54,443 - agents.q_learning_agent - INFO - Agent saved to results/20250902_040554\validation_test\checkpoints\final_model.json
+2025-09-02 04:05:54,443 - training.trainer - INFO - Checkpoint saved: episode 5
+2025-09-02 04:05:54,443 - training.trainer - INFO - Generating training visualizations...
+2025-09-02 04:05:56,672 - training.trainer - INFO - Visualizations saved to results/20250902_040554\validation_test\figures
+2025-09-02 04:05:56,672 - training.trainer - INFO - Training completed in 2.3 seconds
+2025-09-02 04:05:56,682 - __main__ - INFO - validate_system mode completed successfully

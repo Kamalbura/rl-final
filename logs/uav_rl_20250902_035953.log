@@ -1,0 +1,43 @@
+2025-09-02 03:59:53,314 - __main__ - INFO - Starting UAV RL System in train mode
+2025-09-02 03:59:53,314 - __main__ - INFO - Arguments: {'mode': 'train', 'episodes': 100, 'max_steps': 150, 'eval_interval': 100, 'save_interval': 200, 'log_interval': 50, 'learning_rate': 0.1, 'discount': 0.99, 'epsilon_start': 0.3, 'epsilon_end': 0.05, 'epsilon_decay': 0.995, 'expert_bonus': 2.0, 'sim_config': 'config/simulator_params.json', 'expert_config': 'config/expert_policy.json', 'output_dir': 'quick_test', 'experiment_name': 'uav_ddos_rl', 'model_path': None, 'log_level': 'INFO', 'no_validation': False}
+2025-09-02 03:59:53,314 - __main__ - INFO - Loading simulator config from config/simulator_params.json
+2025-09-02 03:59:53,315 - environment.thermal_simulator - INFO - UAV simulator initialized
+2025-09-02 03:59:53,325 - agents.expert_policy - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 03:59:53,326 - agents.expert_policy - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 03:59:53,326 - utils.state_discretizer - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 03:59:53,326 - agents.q_learning_agent - INFO - Warming up Q-table from expert policy
+2025-09-02 03:59:53,359 - agents.q_learning_agent - INFO - Q-table initialized with 5400 states
+2025-09-02 03:59:53,359 - agents.q_learning_agent - INFO - Q-learning agent initialized with 5400 states
+2025-09-02 03:59:53,360 - validation.safety_validator - INFO - Safety validator initialized with 8 scenarios
+2025-09-02 03:59:53,360 - __main__ - INFO - All components created successfully
+2025-09-02 03:59:53,360 - training.trainer - INFO - RL Trainer initialized with config: uav_ddos_rl
+2025-09-02 03:59:53,360 - __main__ - INFO - Starting training...
+2025-09-02 03:59:53,360 - training.trainer - INFO - Starting training for 100 episodes
+2025-09-02 03:59:54,104 - training.trainer - INFO - Episode 50/100: Reward=156.89, Length=150.0, Expert=85.9%, MaxTemp=55.9°C, Effectiveness=53.7%, Safety=0.0, Epsilon=0.233
+2025-09-02 03:59:54,857 - training.trainer - INFO - Episode 100/100: Reward=153.08, Length=150.0, Expert=89.1%, MaxTemp=58.4°C, Effectiveness=53.9%, Safety=0.0, Epsilon=0.182
+2025-09-02 03:59:54,858 - training.trainer - INFO - Evaluating policy at episode 100...
+2025-09-02 03:59:54,858 - validation.safety_validator - INFO - Starting safety validation with 3 episodes per scenario
+2025-09-02 03:59:54,858 - validation.safety_validator - INFO - Testing scenario: normal_operation
+2025-09-02 03:59:54,894 - validation.safety_validator - INFO - Testing scenario: hot_conditions
+2025-09-02 03:59:54,937 - validation.safety_validator - INFO - Testing scenario: low_battery
+2025-09-02 03:59:54,961 - validation.safety_validator - INFO - Testing scenario: critical_battery
+2025-09-02 03:59:54,977 - validation.safety_validator - INFO - Testing scenario: continuous_threat
+2025-09-02 03:59:55,015 - validation.safety_validator - INFO - Testing scenario: temperature_stress
+2025-09-02 03:59:55,044 - validation.safety_validator - INFO - Testing scenario: mixed_conditions
+2025-09-02 03:59:55,092 - validation.safety_validator - INFO - Testing scenario: tst_recovery
+2025-09-02 03:59:55,126 - validation.safety_validator - INFO - Validation completed. Safety score: 0.946
+2025-09-02 03:59:55,126 - training.trainer - INFO - Evaluation: Expert Agreement=97.2%, Safety=100.0%, Reward=0.11, Score=0.946
+2025-09-02 03:59:55,126 - training.trainer - INFO - Evaluating policy at episode 100...
+2025-09-02 03:59:55,126 - validation.safety_validator - INFO - Starting safety validation with 5 episodes per scenario
+2025-09-02 03:59:55,126 - validation.safety_validator - INFO - Testing scenario: normal_operation
+2025-09-02 03:59:55,192 - validation.safety_validator - INFO - Testing scenario: hot_conditions
+2025-09-02 03:59:55,248 - validation.safety_validator - INFO - Testing scenario: low_battery
+2025-09-02 03:59:55,294 - validation.safety_validator - INFO - Testing scenario: critical_battery
+2025-09-02 03:59:55,316 - validation.safety_validator - INFO - Testing scenario: continuous_threat
+2025-09-02 03:59:55,391 - validation.safety_validator - INFO - Testing scenario: temperature_stress
+2025-09-02 03:59:55,433 - validation.safety_validator - INFO - Testing scenario: mixed_conditions
+2025-09-02 03:59:55,511 - validation.safety_validator - INFO - Testing scenario: tst_recovery
+2025-09-02 03:59:55,570 - validation.safety_validator - INFO - Validation completed. Safety score: 0.946
+2025-09-02 03:59:55,570 - training.trainer - INFO - Evaluation: Expert Agreement=97.2%, Safety=100.0%, Reward=0.11, Score=0.946
+2025-09-02 03:59:55,570 - training.trainer - ERROR - Evaluation failed: 'charmap' codec can't encode character '\u2705' in position 2689: character maps to <undefined>
+2025-09-02 03:59:55,640 - __main__ - ERROR - Error in train mode: keys must be str, int, float, bool or None, not int64

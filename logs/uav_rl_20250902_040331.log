@@ -1,0 +1,16 @@
+2025-09-02 04:03:31,083 - __main__ - INFO - Starting UAV RL System in demo mode
+2025-09-02 04:03:31,084 - __main__ - INFO - Arguments: {'mode': 'demo', 'episodes': 1000, 'max_steps': 300, 'eval_interval': 100, 'save_interval': 200, 'log_interval': 50, 'learning_rate': 0.1, 'discount': 0.99, 'epsilon_start': 0.3, 'epsilon_end': 0.05, 'epsilon_decay': 0.995, 'expert_bonus': 2.0, 'sim_config': 'config/simulator_params.json', 'expert_config': 'config/expert_policy.json', 'output_dir': 'results/20250902_040331', 'experiment_name': 'uav_ddos_rl', 'model_path': 'full_training\\checkpoints\\final_model.json', 'log_level': 'INFO', 'no_validation': False}
+2025-09-02 04:03:31,085 - __main__ - INFO - Loading simulator config from config/simulator_params.json
+2025-09-02 04:03:31,099 - environment.thermal_simulator - INFO - UAV simulator initialized
+2025-09-02 04:03:31,100 - agents.expert_policy - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 04:03:31,100 - agents.expert_policy - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 04:03:31,100 - utils.state_discretizer - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 04:03:31,100 - agents.q_learning_agent - INFO - Warming up Q-table from expert policy
+2025-09-02 04:03:31,130 - agents.q_learning_agent - INFO - Q-table initialized with 5400 states
+2025-09-02 04:03:31,133 - agents.q_learning_agent - INFO - Q-learning agent initialized with 5400 states
+2025-09-02 04:03:31,133 - validation.safety_validator - INFO - Safety validator initialized with 8 scenarios
+2025-09-02 04:03:31,133 - __main__ - INFO - All components created successfully
+2025-09-02 04:03:31,133 - __main__ - INFO - Loading trained model from full_training\checkpoints\final_model.json
+2025-09-02 04:03:31,208 - agents.q_learning_agent - INFO - Agent loaded from full_training\checkpoints\final_model.json
+2025-09-02 04:03:31,208 - agents.q_learning_agent - INFO - Loaded 5400 states, 67800 updates
+2025-09-02 04:03:31,208 - __main__ - INFO - demo mode completed successfully

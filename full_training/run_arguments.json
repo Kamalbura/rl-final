@@ -1,0 +1,21 @@
+{
+  "mode": "train",
+  "episodes": 500,
+  "max_steps": 200,
+  "eval_interval": 100,
+  "save_interval": 200,
+  "log_interval": 50,
+  "learning_rate": 0.1,
+  "discount": 0.99,
+  "epsilon_start": 0.3,
+  "epsilon_end": 0.05,
+  "epsilon_decay": 0.995,
+  "expert_bonus": 2.0,
+  "sim_config": "config/simulator_params.json",
+  "expert_config": "config/expert_policy.json",
+  "output_dir": "full_training",
+  "experiment_name": "uav_ddos_rl",
+  "model_path": null,
+  "log_level": "INFO",
+  "no_validation": false
+}

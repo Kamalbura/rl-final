@@ -1,0 +1,53 @@
+{
+  "training_summary": {
+    "total_episodes": 339,
+    "training_time_seconds": 10.812716484069824,
+    "training_time_minutes": 0.18021194140116373,
+    "episodes_per_minute": 1881.118406273442
+  },
+  "performance": {
+    "final_avg_reward": 206.1071901644803,
+    "final_expert_agreement": 0.9626,
+    "final_effectiveness": 0.5327025000000001,
+    "reward_improvement": -1.1930335132269931
+  },
+  "safety": {
+    "total_safety_violations": 0,
+    "total_temperature_violations": 0,
+    "total_battery_violations": 0,
+    "safety_violation_rate": 0.0,
+    "max_temperature_observed": 70.33270620754723,
+    "min_battery_observed": 57.9084882382049
+  },
+  "agent_stats": {
+    "total_states": 5400,
+    "visited_states": 419,
+    "coverage": 0.07759259259259259,
+    "expert_agreement": 1.0,
+    "current_epsilon": 0.05484608438474665,
+    "action_distribution": {
+      "0": 123,
+      "1": 276,
+      "2": 20
+    },
+    "exploration_ratio": 0.09648671129243079,
+    "total_updates": 67800,
+    "q_table_size": 5400,
+    "average_visits_per_state": 161.81384248210023
+  },
+  "action_distribution": {
+    "0": 26636,
+    "1": 40825,
+    "2": 339
+  },
+  "config": {
+    "num_episodes": 500,
+    "max_steps_per_episode": 200,
+    "eval_interval": 100,
+    "save_interval": 200,
+    "log_interval": 50,
+    "output_dir": "full_training",
+    "experiment_name": "uav_ddos_rl"
+  },
+  "output_directory": "full_training"
+}

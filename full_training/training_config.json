@@ -1,0 +1,9 @@
+{
+  "num_episodes": 500,
+  "max_steps_per_episode": 200,
+  "eval_interval": 100,
+  "save_interval": 200,
+  "log_interval": 50,
+  "output_dir": "full_training",
+  "experiment_name": "uav_ddos_rl"
+}

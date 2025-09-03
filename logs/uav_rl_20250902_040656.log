@@ -1,0 +1,28 @@
+2025-09-02 04:06:56,420 - __main__ - INFO - Starting UAV RL System in evaluate mode
+2025-09-02 04:06:56,420 - __main__ - INFO - Arguments: {'mode': 'evaluate', 'episodes': 1000, 'max_steps': 300, 'eval_interval': 100, 'save_interval': 200, 'log_interval': 50, 'learning_rate': 0.1, 'discount': 0.99, 'epsilon_start': 0.3, 'epsilon_end': 0.05, 'epsilon_decay': 0.995, 'expert_bonus': 2.0, 'sim_config': 'config/simulator_params.json', 'expert_config': 'config/expert_policy.json', 'output_dir': 'results/20250902_040656', 'experiment_name': 'uav_ddos_rl', 'model_path': 'full_training\\checkpoints\\final_model.json', 'log_level': 'INFO', 'no_validation': False}
+2025-09-02 04:06:56,425 - __main__ - INFO - Loading simulator config from config/simulator_params.json
+2025-09-02 04:06:56,438 - environment.thermal_simulator - INFO - UAV simulator initialized
+2025-09-02 04:06:56,438 - agents.expert_policy - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 04:06:56,438 - agents.expert_policy - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 04:06:56,438 - utils.state_discretizer - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 04:06:56,440 - agents.q_learning_agent - INFO - Warming up Q-table from expert policy
+2025-09-02 04:06:56,472 - agents.q_learning_agent - INFO - Q-table initialized with 5400 states
+2025-09-02 04:06:56,473 - agents.q_learning_agent - INFO - Q-learning agent initialized with 5400 states
+2025-09-02 04:06:56,473 - validation.safety_validator - INFO - Safety validator initialized with 8 scenarios
+2025-09-02 04:06:56,473 - __main__ - INFO - All components created successfully
+2025-09-02 04:06:56,473 - __main__ - INFO - Loading model from full_training\checkpoints\final_model.json
+2025-09-02 04:06:56,548 - agents.q_learning_agent - INFO - Agent loaded from full_training\checkpoints\final_model.json
+2025-09-02 04:06:56,548 - agents.q_learning_agent - INFO - Loaded 5400 states, 67800 updates
+2025-09-02 04:06:56,548 - __main__ - INFO - Starting comprehensive evaluation...
+2025-09-02 04:06:56,548 - validation.safety_validator - INFO - Starting safety validation with 10 episodes per scenario
+2025-09-02 04:06:56,548 - validation.safety_validator - INFO - Testing scenario: normal_operation
+2025-09-02 04:06:56,663 - validation.safety_validator - INFO - Testing scenario: hot_conditions
+2025-09-02 04:06:56,785 - validation.safety_validator - INFO - Testing scenario: low_battery
+2025-09-02 04:06:56,860 - validation.safety_validator - INFO - Testing scenario: critical_battery
+2025-09-02 04:06:56,922 - validation.safety_validator - INFO - Testing scenario: continuous_threat
+2025-09-02 04:06:57,092 - validation.safety_validator - INFO - Testing scenario: temperature_stress
+2025-09-02 04:06:57,188 - validation.safety_validator - INFO - Testing scenario: mixed_conditions
+2025-09-02 04:06:57,341 - validation.safety_validator - INFO - Testing scenario: tst_recovery
+2025-09-02 04:06:57,454 - validation.safety_validator - INFO - Validation completed. Safety score: 0.946
+2025-09-02 04:06:57,463 - validation.safety_validator - INFO - Validation report saved to results/20250902_040656\evaluation_report.txt
+2025-09-02 04:06:57,463 - __main__ - ERROR - Error in evaluate mode: Object of type bool is not JSON serializable

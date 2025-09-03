@@ -1,0 +1,81 @@
+2025-09-02 04:06:03,945 - __main__ - INFO - Starting UAV RL System in train mode
+2025-09-02 04:06:03,945 - __main__ - INFO - Arguments: {'mode': 'train', 'episodes': 1000, 'max_steps': 300, 'eval_interval': 100, 'save_interval': 200, 'log_interval': 50, 'learning_rate': 0.1, 'discount': 0.99, 'epsilon_start': 0.3, 'epsilon_end': 0.05, 'epsilon_decay': 0.995, 'expert_bonus': 2.0, 'sim_config': 'config/simulator_params.json', 'expert_config': 'config/expert_policy.json', 'output_dir': 'production_model', 'experiment_name': 'uav_ddos_rl', 'model_path': None, 'log_level': 'INFO', 'no_validation': False}
+2025-09-02 04:06:03,947 - __main__ - INFO - Loading simulator config from config/simulator_params.json
+2025-09-02 04:06:03,958 - environment.thermal_simulator - INFO - UAV simulator initialized
+2025-09-02 04:06:03,958 - agents.expert_policy - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 04:06:03,959 - agents.expert_policy - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 04:06:03,959 - utils.state_discretizer - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 04:06:03,959 - agents.q_learning_agent - INFO - Warming up Q-table from expert policy
+2025-09-02 04:06:03,991 - agents.q_learning_agent - INFO - Q-table initialized with 5400 states
+2025-09-02 04:06:03,991 - agents.q_learning_agent - INFO - Q-learning agent initialized with 5400 states
+2025-09-02 04:06:03,991 - validation.safety_validator - INFO - Safety validator initialized with 8 scenarios
+2025-09-02 04:06:03,991 - __main__ - INFO - All components created successfully
+2025-09-02 04:06:03,992 - training.trainer - INFO - RL Trainer initialized with config: uav_ddos_rl
+2025-09-02 04:06:03,993 - __main__ - INFO - Starting training...
+2025-09-02 04:06:03,993 - training.trainer - INFO - Starting training for 1000 episodes
+2025-09-02 04:06:05,474 - training.trainer - INFO - Episode 50/1000: Reward=308.19, Length=300.0, Expert=86.8%, MaxTemp=60.6°C, Effectiveness=56.2%, Safety=0.0, Epsilon=0.233
+2025-09-02 04:06:06,856 - training.trainer - INFO - Episode 100/1000: Reward=304.34, Length=300.0, Expert=89.5%, MaxTemp=61.0°C, Effectiveness=56.5%, Safety=0.0, Epsilon=0.182
+2025-09-02 04:06:06,856 - training.trainer - INFO - Evaluating policy at episode 100...
+2025-09-02 04:06:06,856 - validation.safety_validator - INFO - Starting safety validation with 3 episodes per scenario
+2025-09-02 04:06:06,856 - validation.safety_validator - INFO - Testing scenario: normal_operation
+2025-09-02 04:06:06,896 - validation.safety_validator - INFO - Testing scenario: hot_conditions
+2025-09-02 04:06:06,940 - validation.safety_validator - INFO - Testing scenario: low_battery
+2025-09-02 04:06:06,966 - validation.safety_validator - INFO - Testing scenario: critical_battery
+2025-09-02 04:06:06,990 - validation.safety_validator - INFO - Testing scenario: continuous_threat
+2025-09-02 04:06:07,047 - validation.safety_validator - INFO - Testing scenario: temperature_stress
+2025-09-02 04:06:07,074 - validation.safety_validator - INFO - Testing scenario: mixed_conditions
+2025-09-02 04:06:07,128 - validation.safety_validator - INFO - Testing scenario: tst_recovery
+2025-09-02 04:06:07,170 - validation.safety_validator - INFO - Validation completed. Safety score: 0.946
+2025-09-02 04:06:07,170 - training.trainer - INFO - Evaluation: Expert Agreement=97.2%, Safety=100.0%, Reward=0.11, Score=0.946
+2025-09-02 04:06:08,556 - training.trainer - INFO - Episode 150/1000: Reward=315.87, Length=300.0, Expert=91.9%, MaxTemp=59.5°C, Effectiveness=56.4%, Safety=0.0, Epsilon=0.141
+2025-09-02 04:06:09,922 - training.trainer - INFO - Episode 200/1000: Reward=308.16, Length=300.0, Expert=93.5%, MaxTemp=61.2°C, Effectiveness=56.4%, Safety=0.0, Epsilon=0.110
+2025-09-02 04:06:09,922 - training.trainer - INFO - Evaluating policy at episode 200...
+2025-09-02 04:06:09,922 - validation.safety_validator - INFO - Starting safety validation with 3 episodes per scenario
+2025-09-02 04:06:09,922 - validation.safety_validator - INFO - Testing scenario: normal_operation
+2025-09-02 04:06:09,952 - validation.safety_validator - INFO - Testing scenario: hot_conditions
+2025-09-02 04:06:09,997 - validation.safety_validator - INFO - Testing scenario: low_battery
+2025-09-02 04:06:10,022 - validation.safety_validator - INFO - Testing scenario: critical_battery
+2025-09-02 04:06:10,039 - validation.safety_validator - INFO - Testing scenario: continuous_threat
+2025-09-02 04:06:10,073 - validation.safety_validator - INFO - Testing scenario: temperature_stress
+2025-09-02 04:06:10,102 - validation.safety_validator - INFO - Testing scenario: mixed_conditions
+2025-09-02 04:06:10,149 - validation.safety_validator - INFO - Testing scenario: tst_recovery
+2025-09-02 04:06:10,185 - validation.safety_validator - INFO - Validation completed. Safety score: 0.946
+2025-09-02 04:06:10,185 - training.trainer - INFO - Evaluation: Expert Agreement=97.2%, Safety=100.0%, Reward=0.11, Score=0.946
+2025-09-02 04:06:10,262 - agents.q_learning_agent - INFO - Agent saved to production_model\checkpoints\model_ep200.json
+2025-09-02 04:06:10,300 - training.trainer - INFO - Checkpoint saved: episode 200
+2025-09-02 04:06:11,704 - training.trainer - INFO - Episode 250/1000: Reward=313.23, Length=300.0, Expert=94.8%, MaxTemp=58.9°C, Effectiveness=56.5%, Safety=0.0, Epsilon=0.086
+2025-09-02 04:06:13,038 - training.trainer - INFO - Episode 300/1000: Reward=308.04, Length=300.0, Expert=96.1%, MaxTemp=59.0°C, Effectiveness=55.6%, Safety=0.0, Epsilon=0.067
+2025-09-02 04:06:13,038 - training.trainer - INFO - Evaluating policy at episode 300...
+2025-09-02 04:06:13,038 - validation.safety_validator - INFO - Starting safety validation with 3 episodes per scenario
+2025-09-02 04:06:13,038 - validation.safety_validator - INFO - Testing scenario: normal_operation
+2025-09-02 04:06:13,085 - validation.safety_validator - INFO - Testing scenario: hot_conditions
+2025-09-02 04:06:13,125 - validation.safety_validator - INFO - Testing scenario: low_battery
+2025-09-02 04:06:13,149 - validation.safety_validator - INFO - Testing scenario: critical_battery
+2025-09-02 04:06:13,168 - validation.safety_validator - INFO - Testing scenario: continuous_threat
+2025-09-02 04:06:13,208 - validation.safety_validator - INFO - Testing scenario: temperature_stress
+2025-09-02 04:06:13,233 - validation.safety_validator - INFO - Testing scenario: mixed_conditions
+2025-09-02 04:06:13,289 - validation.safety_validator - INFO - Testing scenario: tst_recovery
+2025-09-02 04:06:13,324 - validation.safety_validator - INFO - Validation completed. Safety score: 0.946
+2025-09-02 04:06:13,324 - training.trainer - INFO - Evaluation: Expert Agreement=97.2%, Safety=100.0%, Reward=0.11, Score=0.946
+2025-09-02 04:06:14,406 - training.trainer - INFO - High expert agreement achieved: 96.8%
+2025-09-02 04:06:14,406 - training.trainer - INFO - Early stopping triggered at episode 339
+2025-09-02 04:06:14,412 - training.trainer - INFO - Evaluating policy at episode 1000...
+2025-09-02 04:06:14,412 - validation.safety_validator - INFO - Starting safety validation with 5 episodes per scenario
+2025-09-02 04:06:14,412 - validation.safety_validator - INFO - Testing scenario: normal_operation
+2025-09-02 04:06:14,473 - validation.safety_validator - INFO - Testing scenario: hot_conditions
+2025-09-02 04:06:14,537 - validation.safety_validator - INFO - Testing scenario: low_battery
+2025-09-02 04:06:14,576 - validation.safety_validator - INFO - Testing scenario: critical_battery
+2025-09-02 04:06:14,606 - validation.safety_validator - INFO - Testing scenario: continuous_threat
+2025-09-02 04:06:14,672 - validation.safety_validator - INFO - Testing scenario: temperature_stress
+2025-09-02 04:06:14,712 - validation.safety_validator - INFO - Testing scenario: mixed_conditions
+2025-09-02 04:06:14,784 - validation.safety_validator - INFO - Testing scenario: tst_recovery
+2025-09-02 04:06:14,848 - validation.safety_validator - INFO - Validation completed. Safety score: 0.946
+2025-09-02 04:06:14,849 - training.trainer - INFO - Evaluation: Expert Agreement=97.2%, Safety=100.0%, Reward=0.11, Score=0.946
+2025-09-02 04:06:14,850 - validation.safety_validator - INFO - Validation report saved to production_model\final_evaluation.txt
+2025-09-02 04:06:14,850 - training.trainer - ERROR - Evaluation failed: Object of type bool is not JSON serializable
+2025-09-02 04:06:14,938 - agents.q_learning_agent - INFO - Agent saved to production_model\checkpoints\final_model.json
+2025-09-02 04:06:14,973 - training.trainer - INFO - Checkpoint saved: episode 1000
+2025-09-02 04:06:14,973 - training.trainer - INFO - Generating training visualizations...
+2025-09-02 04:06:17,372 - training.trainer - INFO - Visualizations saved to production_model\figures
+2025-09-02 04:06:17,377 - training.trainer - INFO - Training completed in 13.4 seconds
+2025-09-02 04:06:17,410 - __main__ - INFO - train mode completed successfully

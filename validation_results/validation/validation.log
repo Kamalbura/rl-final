@@ -1,0 +1,44 @@
+2025-09-02 04:58:18,389 - INFO - Initializing system components...
+2025-09-02 04:58:18,389 - ERROR - Error loading config: stat: path should be string, bytes, os.PathLike or integer, not dict
+2025-09-02 04:58:18,390 - INFO - UAV simulator initialized
+2025-09-02 04:58:18,390 - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 04:58:18,390 - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 04:58:18,390 - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 04:58:18,390 - ERROR - Failed to initialize components: SafetyValidator.__init__() takes from 2 to 3 positional arguments but 4 were given
+2025-09-02 05:01:26,256 - INFO - Initializing system components...
+2025-09-02 05:01:26,267 - ERROR - Error loading config: stat: path should be string, bytes, os.PathLike or integer, not dict
+2025-09-02 05:01:26,267 - INFO - UAV simulator initialized
+2025-09-02 05:01:26,267 - INFO - Loaded lookup table from config/expert_policy.json
+2025-09-02 05:01:26,267 - INFO - Expert policy initialized with 45 lookup entries
+2025-09-02 05:01:26,267 - INFO - State discretizer initialized with 5400 discrete states
+2025-09-02 05:01:26,267 - INFO - Safety validator initialized with 8 scenarios
+2025-09-02 05:01:26,267 - INFO - Warming up Q-table from expert policy
+2025-09-02 05:01:26,301 - INFO - Q-table initialized with 5400 states
+2025-09-02 05:01:26,301 - INFO - Q-learning agent initialized with 5400 states
+2025-09-02 05:01:26,455 - INFO - Agent loaded from full_training\checkpoints\final_model.json
+2025-09-02 05:01:26,455 - INFO - Loaded 5400 states, 67800 updates
+2025-09-02 05:01:26,455 - INFO - All components initialized successfully
+2025-09-02 05:01:26,455 - INFO - Starting comprehensive validation suite...
+2025-09-02 05:01:26,455 - INFO - Phase 1: Validating all 45 state combinations...
+2025-09-02 05:01:26,455 - INFO - State combination validation: 20.0% complete
+2025-09-02 05:01:26,455 - INFO - State combination validation: 40.0% complete
+2025-09-02 05:01:26,455 - INFO - State combination validation: 60.0% complete
+2025-09-02 05:01:26,455 - INFO - State combination validation: 80.0% complete
+2025-09-02 05:01:26,455 - INFO - State combination validation: 100.0% complete
+2025-09-02 05:01:26,455 - INFO - Phase 2: Running 8 safety scenarios...
+2025-09-02 05:01:26,455 - INFO - Running scenario: normal_operation
+2025-09-02 05:01:26,491 - INFO - Running scenario: hot_conditions
+2025-09-02 05:01:26,514 - INFO - Running scenario: low_battery
+2025-09-02 05:01:26,539 - INFO - Running scenario: critical_battery
+2025-09-02 05:01:26,564 - INFO - Running scenario: continuous_threat
+2025-09-02 05:01:26,591 - INFO - Running scenario: temperature_stress
+2025-09-02 05:01:26,611 - INFO - Running scenario: mixed_conditions
+2025-09-02 05:01:26,639 - INFO - Running scenario: tst_recovery
+2025-09-02 05:01:26,659 - INFO - Phase 3: Computing metrics...
+2025-09-02 05:01:26,662 - INFO - Phase 4: Saving results...
+2025-09-02 05:01:26,745 - INFO - Step-by-step data saved to validation_results\validation\validation_steps_20250902_050126.csv
+2025-09-02 05:01:26,755 - INFO - State combination results saved to validation_results\validation\state_combinations_20250902_050126.json
+2025-09-02 05:01:27,166 - INFO - Scenario results saved to validation_results\validation\scenario_results_20250902_050126.json
+2025-09-02 05:01:27,166 - INFO - Validation suite completed successfully
+2025-09-02 05:01:27,166 - INFO - Generating professional visualization suite...
+2025-09-02 05:01:39,946 - INFO - All visualizations generated successfully
