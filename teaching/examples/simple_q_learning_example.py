@@ -147,9 +147,14 @@ class GridWorldEnv:
                 for j in range(self.height):
                     state = (i, j)
                     if state != self.goal_pos and state not in self.obstacles:
-                        q_values = [q_table.get(state, {}).get(a, 0) if isinstance(q_table, dict) 
-                                    else q_table.get(state, [0, 0, 0, 0])[a] 
-                                    for a in range(4)]
+                        # Fixed: Handle the Q-table structure correctly
+                        if isinstance(q_table, dict) and state in q_table:
+                            if isinstance(q_table[state], dict):  # Nested dict structure
+                                q_values = [q_table[state].get(a, 0) for a in range(4)]
+                            else:  # List structure
+                                q_values = q_table[state]
+                        else:
+                            q_values = [0, 0, 0, 0]
                         
                         if sum(q_values) == 0:
                             continue  # Skip cells with no Q-values
